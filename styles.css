@@ -291,3 +291,27 @@ img#update-stories {
 #section-update-stories .left p {
     width: 30vw;
 }
+
+#section-final-product .left p {
+    width: 25vw;
+}
+
+#section-final-product .right img {
+    width: 50vw;
+}
+
+#section-takeaways-next-steps .left, #section-takeaways-next-steps .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section-takeaways-next-steps .left p {
+    width: 35vw;
+}
+
+#section-takeaways-next-steps .right p {
+    width: 35vw;
+}
+
+
