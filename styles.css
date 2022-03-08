@@ -1,0 +1,293 @@
+
+
+:root {
+    --main-bg-color: #202020;
+}
+
+p, h1, h2, h3, li {
+    font-family: 'DM Sans', sans-serif;
+    color: #FFF;
+    margin-block: 10px;
+}
+
+#title h1 {
+    font-size: 100px;
+}
+
+#title p {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: xxx-large;
+}
+
+p {
+    font-size: large;
+}
+
+section > .top p {
+    max-width: 80vw;
+    text-align: center;
+}
+
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    width: 40vw;
+    border-radius: 10px;
+}
+
+img.user-persona {
+    height: 50vh;
+    width: auto;
+    margin: 10px;
+    box-shadow: 0 10px 5px 0 #33333388;
+}
+
+img.graph {
+    width: 30vw;
+    height: auto;
+    margin: 10px;
+    box-shadow: 0 10px 5px 0 #33333388;
+}
+
+img.prototype-lofi-alt {
+    width: auto;
+    height: 40vh;
+    box-shadow: 0 10px 5px 0 #33333388;
+}
+
+img#update-stories {
+    width: 67vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: var( --main-bg-color);
+    transition-duration: 1s;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    position: sticky;
+    top: 0;
+    padding: 40px;
+}
+
+section.scroll-page {
+    position: relative;
+    height: fit-content;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+section.scroll-page > .unscrollable {
+    position: fixed;
+    top: 0;
+}
+
+
+section.scroll-page > .unscrollable.left {
+    left: 0;
+    top: 20vh;
+    width: 40vw;
+}
+
+section.scroll-page > .unscrollable.right {
+    right: 0;
+}
+
+
+
+section.scroll-page > .scrollable {
+    margin: 0 0 0 0;
+    /* transform: translateY(100vh); */
+}
+
+section.scroll-page > .scrollable.right {
+    margin-right: 5vw;
+}
+
+section.scroll-page > .scrollable.left {
+    left: 0;
+}
+
+section > div {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+section.top-bottom {
+    grid-template-areas: 
+    "top"
+    "bottom"
+    "bottom";
+}
+
+section.top-left-right {
+    grid-template-areas:
+    "top top"
+    "left right"
+    "left right"
+    "left right";
+}
+
+section.top-left-right-bottom {
+    grid-template-areas: 
+    "top top"
+    "left right"
+    "bottom bottom";
+}
+
+section.left-right {
+    grid-template-areas: 
+    "left right";
+}
+
+section > .top {
+    grid-area: top;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+section > .left {
+    grid-area: left;
+}
+
+section > .right {
+    grid-area: right;
+}
+
+section > .bottom {
+    grid-area: bottom;
+    justify-content: center;
+    align-content: center;   
+}
+
+section > .bottom > * {
+    justify-self: top;
+}
+
+section > .top > * {
+    justify-self: bottom;
+}
+
+section > .right > * {
+    justify-self: left;
+}
+
+section > .left > * {
+    justify-self: right;
+    margin-left: 30px;
+}
+
+
+section.active > .top, .left, .right, .bottom {
+    transform: translateY(0) translateX(0);
+    transition-duration: 1s;
+    opacity: 1;
+}
+
+section.inactive > .top {
+    transform: translateY(-100vh);
+    position: sticky;
+    top: 0;
+    opacity: 0;
+}
+
+section.inactive > .left {
+    transform: translateX(-100vw);
+    opacity: 0;
+}
+
+section.inactive > .right {
+    transform: translateX(100vw);
+    opacity: 0;
+}
+
+section.inactive > .bottom {
+    transform: translateY(100vh);
+    opacity: 0;
+}
+
+
+
+
+
+
+
+#title {
+    height: 100vh;
+}
+
+#title > img {
+    transform: scale(40%) rotate(0deg);
+}
+
+
+
+
+
+/* individual component styles */
+.spotify-bkg {
+    width: 50vw;
+    transform: rotate3d(10, 10, 10, 10deg);
+}
+
+
+
+
+
+
+/* per page styles */
+#section-problem-statement .left p {
+    max-width: 30vw;
+}
+
+#section-prototyping .left {
+    width: 30vw;
+}
+
+#section-prototyping .right {
+    width: 60vw;
+}
+
+#section-prototyping .right img {
+    width: 60vw;
+}
+
+img#prototype-lofi {
+    width: 70vw;
+}
+
+#section-user-findings .left, #section-user-findings .right {
+    width: 40vw;
+}
+
+#section-user-findings .left img {
+    width: 30vw;
+}
+
+#section-user-testing > .left p, #section-user-testing > .right p {
+    width: 35vw;
+}
+
+img#update-stories {
+    width: 60vw;
+}
+
+#section-update-stories .left p {
+    width: 30vw;
+}

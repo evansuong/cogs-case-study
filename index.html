@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Spotify Contests</title>
+    <link rel="stylesheet" href="./styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="title" class="top-bottom">
+            <div class="top">
+                <h1>Spotify Contests...</h1>
+            </div>
+            <div class="bottom">
+                <p>a new way to Spotify</p>
+            </div>
+        </section>
+        <section id="section-problem-statement" class="top-left-right active">
+            <div class="top">
+                <h2>You know Spotify...</h2>
+                <p>the largest streaming platform out there, where hundreds of thousands of creators share their creations for the world to listen to. From it's snappy user interface, to its brilliant brand design, Spotify covers the needs of music listeners and artsts alike.</p>
+            </div>
+            <div class="left">
+                <h3>However...</h3>
+                <p>As the music industry continues to migrate to the digital streaming world, the roadmap to becoming an established musical artist has largely remained the same: networking and collaborations. Our team found that promising young talent in music production/artistry lack opportunities to officially collaborate with established musicians through popular streaming services. After a little research we learned that Spotify clearly cares about this issue, and they have some features in place like curated playlists to help smaller artists get noticed. But there is still much room to grow.</p>
+            </div>
+            <div class="right">
+                <img src="./assets/spotify-ui.png" alt="image of the current spotify UI" class="spotify-bkg"/>
+            </div>
+        </section>
+        <section id="section-redesign-intro" class="top-bottom inactive">
+            <div class="top">
+                <h2>Introducing Spotify Contests...</h2>
+                <p>a collaboration and remixing feature on the Spotify platform, where music creators have the opportunity to participate in remix contests held within the Spotify platform by verified artists. Winning submissions are awarded by having their submission uploaded as a single in collaboration with the contest host, along with other prizes that are determined by the contest host.</p>
+            </div>
+            <div class="bottom">
+                <p>Through Spotify Contests, we aim to solve the issue of small artist underexposure by:</p>
+                <ul>
+                    <li>Pooling the listening base from participants and hosts alike into a single hub where listeners can explore new artists.</li>
+                    <li>Providing verified artists the opportunity to engage with fans and connections to rising aritsts.</li>
+                    <li>Providing underground artists the ability to upload music to the Spotify platform without having to go through a distribution service.</li>
+                </ul> 
+            </div>
+        </section>
+        <section id="section-user-testing" class="top-left-right inactive">
+            <div class="top">
+                <h2>Our User Research...</h2>
+                <p>was carried out with the goal to understand the types of user groups that would be using our feature, along with each group's specific needs and goals they have within the Spotify Contest environment. Our process involved an online survey and a collection of interviews.</p>
+            </div>
+            <div class="left">
+                <h3>Survey</h3>
+                <p>The survey would help us reach a large variety of music listeners, and was used to determine if our feature was something that would even be useful to people. This would supplement our interview findings by confirming or denying the patterns of needs and goals we found in our interview</p>
+            </div>
+            <div class="right">
+                <h3>Interview</h3>
+                <p>The interview was used to delve deeper into the pain points and wants of users in the Spotify community. This would supplement our survey findings by giving a face to the large pool of anonymous users that we received data from.</p>
+            </div>
+        </section>
+        <section id="section-user-findings" class="top-left-right inactive">
+            <div class="top">
+                <h2>We Found...</h2>
+                <p>The user research process largely confirmed our assumptions that underground artists would love the idea of a remix contest that would reward them with exposure on the most popular music streaming platform in the world. We also found that our fall into 2 categories: Contest Host, and Contest Participant, which gave us two benchmarks to validate our features with.</p>
+            </div>
+            <div class="left">
+                <!-- graph images -->
+                <img class="graph" src="./assets/graph-remix.png" alt="Pie chart titled: would you create a remix of a song for the chance to be featured on a spotify verified artists' page? 37.5 of respondents indicated no, and 62.5% of respondents indicated yes." id="graph-remix">
+                <img class="graph" src="./assets/graph-new-artists.png" alt="Pie chart titled: do you seek out new artists. 16.7% of respondents indicated fairly often, 58.3% of respondents indicated somtimes, and 25% of respondents responded rarely" id="graph-new-artists">
+            </div>
+            <div class="right" style="display: flex;">
+                <!-- graph images -->
+                <img class="user-persona" src="./assets/user-persona-lisa.png" alt="user persona diagram of Lisa, a hobbyist music producer, age: 20, occupation: student, residence: los angeles. Lisa is a musician attending UCLA. She is busy with classes and can't spend much money, but loves making and sharing music in her free time. While Spotify is an app that she uses every day, she feels that it is challenging to try and share original music, especially when it takes so much time to produce. This frustration causes her to spend less time with this hobby, and she wishes there was some way Spotify could help make producing content easier" id="persona-lisa">
+                <img class="user-persona" src="./assets/user-persona-jonathan.png" alt="user persona diagram of Jonathan, an underground producer, Age: 26, Occupation: Musician and part-time teacher, Residence: San Francisco, Jonathan lives in San Francisco and spends a lot of his time doing remixes and sharing his work on social media groups such as YouTube and SoundCloud. However, lately he has been having trouble getting new listeners and doesn't know how to promote himself. He also feels that it can be troublesome remixing music while worrying about copyright. Spotify is something that he uses often, and he feels that it can be good for finding new artists, but he doesn't think it will be enough for him to pick up a stronger following. " id="persona-jonathan">
+                <img class="user-persona" src="./assets/user-persona-aaron.png" alt="user persona diagram of Aaron, Age: 31, Occupation: Music Artist, Residence: New York City, Aaron is verified on Spotify, and has a large following of more than 500,000 listeners. He works as a full time producer and tries to release a new single every couple of months, but he never hosted a remix contest before. Collaborations are also something that he finds very interesting, as they would not only allow him to explore new songs with others, but also result in new followers for both collaborators. He thinks Spotify is a great platform for sharing music, but lacks features that would allow different musicians to produce songs together. " id="persona-aaron">
+            </div>
+        </section>
+        <section id="section-prototyping" class="scroll-page left-right inactive">
+            <div class="left unscrollable">
+                <h2>Our First Prototypes...</h2>
+                <p>were built out with the intention to get the most feedback out of our user testers. We deliberately picked some controversial designs that would make it easy for users to comment on, whether they liked or disliked it. If they liked it, then we were able to come up with something robust and original, and if they didn't like it we could always adopt more popular designs that have proven to succeed.</p>
+                <p>We wanted to keep our UX flows straight and to the point, minimizing navigations and ambiguity for the user.</p>
+            </div>
+            <div class="right scrollable"> 
+                <!-- UX flows -->
+                <img id="prototype-lofi" src="./assets/prototype-lofi.png"/>
+            </div>
+            <div class="bottom">
+            </div>
+        </section>
+        <section id="section-user-testing" class="top-left-right inactive">
+            <div class="top">
+                <h2>Our User Testers...</h2>
+                <p>were comprised of both contest hosts and contest participants. We had our users carry out a sequence of tasks, followed by a short interview to query their mind of any improvements that we could make to our existing features.</p>
+            </div>
+            <div class="left">
+                <div>
+                    <h3>Tasks</h3>
+                    <ol>
+                        <li>Search & Find all contests page</li>
+                        <li>Search for open contests</li>
+                        <li>View an open contest</li>
+                        <li>Download stems</li>
+                        <li>View contest details</li>
+                        <li>Upload song</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="right">
+                <h3>Interview Questions</h3>
+                <ul>
+                    <li>If you weren't participating in this contest, how much time would you spend on a contest page to listen to music?</li>
+                    <li>How would you describe your overall experience using this application prototype?</li>
+                    <li>How would you describe your overall experience using this application prototype?</li>
+                    <li>How difficult was it to complete the tasks (1= very easy, 5=very difficult)?</li>
+                    <li>If you could change or add one thing to this prototype to help facilitate these tasks, what would that be?</li>
+                    <li>After going through the prototype, would you use this feature?</li>
+                    <li>Of the two participant flow prototypes, which features in one did you like more than the in the other?</li>
+                    <li>Ask us anything about our redesign</li>
+                </ul>
+            </div>
+        </section>
+        <section id="section-alt-screens" class="top-left-right inactive">
+            <div class="top">
+                <h2>Alternative Prototypes...</h2>
+                <p>were used to give our user testers something to compare our current designs to. This allowed us to have an alternative ready if the user didn't like a ui component in our current prototypes, as well as present more possibilities to our user testers more content to comment on.</p>
+            </div>
+            <div class="left">
+                <img src="./assets/prototype-lofi-1.png" alt="" class="prototype-lofi-alt"/>
+            </div>
+            <div class="right scrollable">
+                <img src="./assets/prototype-lofi-2.png" alt="" class="prototype-lofi-alt"/>
+            </div>
+        </section>
+        <section id="section-results-hi-fid" class="scroll-page left-right inactive">
+            <div class="left unscrollable">
+                <h2>Our User Testing Results...</h2>
+                <p>gave us the necessary feedback to update those controversial design decisions we made in our first round of prototyping.</p>
+                <p>We kept some components like the large countdown timer, but did away with some components like the large header background image and dropdown menu for our stems list. In their place we opted for more widely adopted UI components like a tab switcher instead of the dropdown, and an image icon instad of a large header image. We also incorporated a winners page, as our user testers almost unanimously suggested that we make all contest submissions and results avaiable after a contest has ended.</p>
+            </div>
+            <div class="right scrollable">
+                <img src="./assets/prototype-hifi-0.png" alt="" id="prototype-hifi-0">
+            </div>
+        </section>
+        <section id="section-update-stories" class="scroll-page left-right inactive">   
+            <div class="left unscrollable">
+                <h3>Some Changes We Made...</h3>
+                <p>are detailed in the following update stories. With the final round of user testing we only needed to make some minor tweaks here and there, but it was essential to properly wrap up our design process</p>
+            </div>  
+            <div class="right scrollable">
+                <img src="./assets/update-stories.png" alt="" id="update-stories">
+            </div>
+        </section>
+        <section id="section-final-product" class="scroll-page top-bottom inactive">
+            <div class="left unscrollable">
+                <h2>Our Final Design...</h2>
+                <p>looks pretty sweet, without losing any feeling of naturalness, nor deviating away from the current Spotify UI</p>
+            </div>
+            <div class="right scrollable">
+                <!-- hi fid proto -->
+                <img id="prototype-hifi" src="./assets/prototype-hifi.png" alt=""/>
+            </div>
+        </section>
+        <section id="section-takeaways-next-steps" class="milestone left-right inactive">
+            <div class="left">
+                <h2>The Important Takeaways...</h2>
+                <p>for me were very concentrated in the importance of user research and user testing. I've been a designer for fun for a while now, and most of my work was driven by the desire to make things that look cool and clean. Although I knew the importance of user research/testing, I never really felt like I needed it, and therefore never really knew the ways in which these processes were helpful. Through this case study, I found it to be an extremely forward thinking experience that has had a huge impact on shaping how I view our team's upcoming goals, problems, and objectives. When writing up the questions, I thought about what ambiguities existed in our team's roadmap to a finished product. This search for ambiguities created something like a snowball effect where I ended up with too many questions to ask. During the interview process I could see our roadmap being drawn out with the information my interviewees were providing.</p>
+                <p>I think that our group did a solid job and came up with questions that would reveal paths to our finished product. The fact that I had a much better idea of what we need to do in order to design the best product we could signified to me that our user research had been solid after each round of interfacing with our users.</p>
+            </div>
+            <div class="right">
+                <h2>Moving Foward...</h2>
+                <p>Although we came to a final design that our team is all proud of, I can't help but feeling like there is much more to rolling out an actual redesign on an existing platform outside of the design process itself. I feel like there are tons of legal, budgeting, and technical obstacles that have to be accounted for during an endeavor like this. It would be cool to have to opportunity to dialogue with people in industry to see how such a redesign is made possible, and a redesign is carried out in industry.</p>
+                <p>I also now understand how much time such a process takes, between the actual work to plan and create a design, and waiting on user feedback. This is a patience game that requires you to view, review, and review again to continuously improve my product, and as things begin to unravel themselves, I gain insights into topics that I never even knew existed when starting out. I think that this type of exploration is what I find super fun about Data Driven Design.</p>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
