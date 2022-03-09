@@ -252,6 +252,13 @@ section.inactive > .bottom {
 
 
 /* per page styles */
+#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #section-problem-statement .left p {
     max-width: 30vw;
 }

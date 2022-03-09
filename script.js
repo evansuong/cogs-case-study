@@ -104,4 +104,8 @@ function init() {
     window.addEventListener('scroll', changeBackgroundColor);
 }
 
-document.addEventListener('DOMContentLoaded', init);
+var img = new Image();
+img.onload = function () {
+   init();
+}
+img.src = "./assets/prototype-lofi.png";
