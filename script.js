@@ -104,8 +104,30 @@ function init() {
     window.addEventListener('scroll', changeBackgroundColor);
 }
 
-var img = new Image();
-img.onload = function () {
-   init();
+var img1 = new Image();
+img1.onload = function () {
+    img1Loaded = true;
+    if (img1Loaded && img2Loaded && img3Loaded && img4Loaded) init();
 }
-img.src = "./assets/prototype-lofi.png";
+img1.src = "./assets/prototype-lofi.png";
+
+var img2 = new Image();
+img2.onload = function () {
+    img2Loaded = true;
+    if (img1Loaded && img2Loaded && img3Loaded && img4Loaded) init();
+}
+img2.src = "./assets/prototype-hifi.png";
+
+var img3 = new Image();
+img3.onload = function () {
+    img3Loaded = true;
+    if (img1Loaded && img2Loaded && img3Loaded && img4Loaded) init();
+}
+img3.src = "./assets/prototype-hifi-0.png";
+
+var img4 = new Image();
+img4.onload = function () {
+    img4Loaded = true;
+    if (img1Loaded && img2Loaded && img3Loaded && img4Loaded) init();
+}
+img4.src = "./assets/update-stories.png";
